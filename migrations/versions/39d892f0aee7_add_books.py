@@ -24,10 +24,10 @@ def upgrade():
             created_at timestamp with time zone NOT NULL DEFAULT current_timestamp,
             updated_at timestamp with time zone NOT NULL DEFAULT current_timestamp,
             title text not null,
-            discription text not null,
+            description text not null,
             author text not null,
             issue_date date not null,
-            page_quantity numeric not null        
+            page_quantity integer not null        
         );
         '''
     )

@@ -1,7 +1,8 @@
 from app.db_models.base import Base
-from sqlalchemy import  Column, Text, Integer
+from sqlalchemy import  Column, Text, Integer, DateTime
 from sqlalchemy.dialects.postgresql import UUID
 from sqlalchemy.sql import func
+import uuid
 
 class Book(Base):
     __tablename__ = "books"
